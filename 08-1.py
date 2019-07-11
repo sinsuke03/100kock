@@ -1,6 +1,6 @@
 def g(target):
-    target_list = []
     result = ""
+    target_list = []
     for i in range(0,len(target)):
         if target[i].islower():
             target_list.insert(i,chr(219 - ord(target[i])))
@@ -12,4 +12,8 @@ def g(target):
 
     return result
 
-print(g("Type"))
+target = "Type"
+e = g(target)
+f = g(e)
+print(e)
+print(f)
